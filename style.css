@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.error-msg, .error-img {
+    display: none;
+}
+.field-group.error .error-msg,
+.field-group.error .error-img {
+    display: block;
+}
+.field-group.error input{
+    border: 2px solid hsl(0, 100%, 74%);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+    
+.container {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(images/bg-intro-mobile.png);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+.content {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.content-1 {
+    flex: 1;
+    margin-bottom: 50px;
+    color: white;
+}
+.content-1 h1 {
+    font-size: 2rem;
+    line-height: 2.7rem;
+    margin-bottom: 2rem;
+}
+.content-1 p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.content-2 {
+    flex: 1;
+}
+.content-2-item-1 {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 15px;
+    box-shadow: 0 7px hsla(249, 10%, 26%, 0.404);
+    padding: 15px 80px;
+    margin-bottom: 30px;
+    color: white;
+}
+.content-2-item-1 p {
+    font-size: 1rem;
+    line-height: 2.2rem;
+}
+.content-2-item-2 {
+    background-color: white;
+    border-radius: 15px;
+    padding: 50px 20px;
+    box-shadow: 0 7px hsla(249, 10%, 26%, 0.404);
+    
+}
+input {
+    width: 100%;
+    height: 50px;
+    padding: 20px 25px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    outline: none;
+}
+.button{
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: hsla(154, 59%, 51%, 0.5);;
+}
+.content-2-item-2 p {
+    margin: 0 40px;
+    font-size: 0.7rem;
+    color: gray;;
+}
+.content-2-item-2 span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+.field-group{
+    position: relative;
+    margin-bottom: 25px;
+}
+.error-img{
+    position: absolute;
+    left: 90%;
+    top: 15%;
+}
+.field-group p {
+    color: hsl(0, 100%, 74%);
+    font-size: .8rem;
+    font-weight: 500;
+    font-style: italic;
+    width: 100%;
+    margin-left: 0;
+    text-align: right;
+}  
+@media (min-width: 1000px) {
+    .container {background-image: url(images/bg-intro-desktop.png);}
+    .content {flex-direction: row;}
+    .content-1 {padding: 0 55px;
+                text-align: left;
+                max-width: 700px;}
+    .content-1 h1 {font-size: 3rem;
+                  line-height: 3rem;} 
+    .content-1 p {line-height: 1.8rem;
+                  font-size: 1.1rem;}          
+    .content-2 {
+                
+    }           
+    .field-group input {font-size: 1rem;}
+}
